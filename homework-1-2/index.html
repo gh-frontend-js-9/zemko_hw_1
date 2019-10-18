@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>Коротко о себе</legend>
+			<label for="firstname">Имя</label><input type="text"name="firsname"id="firstname"><br>
+			<label for="lastname">Фамилия</label><input type="text"name="lastname"id="lastname"></label><br>
+			<span>Пол:</span>
+			<label for="male">Мужской</label><input type="radio"id="male"name="sex" value="male">
+			<label for="female">Женский</label><input type="radio"id="female"name="sex"value="female"><br>
+			<label for="text">Возвраст</label><input type="text" id="text">
+		</fieldset>
+		<fieldset>
+			<legend>
+				<b>Подробнее о себе</b>
+			</legend>
+		<input type="radio"id="man"name="people"><label for="">Молодой Человек</label>
+		<input type="radio"id="woman"name="people"><label for="">Девушка</label><br>
+		<input type="text"name="birthday"id="birthday"><label for="birthday">Дата рождения</label><br>
+		<input type="text"name="family"id="family"><label for="family">Семейное положение</label><br>
+		<input type="text"name="socstatus"id="socstatus"><label for="socstatus">Социальный статус</label><br>
+		<input type="text"name="home"id="home"><label for="home">Местожительство</label><br>
+		<h4>Что вы обычно делаете на выходных:</h4>
+		<input type="checkbox" name="sleeping" id="sleep"><label for="sleep">Сплю</label><br>
+		<input type="checkbox" name="walk" id="walking"><label for="walking">Гуляю с друзьями</label><br>
+		<input type="checkbox" name="fish" id="fishing"><label for="fishing">Еду на рыбалку</label><br>
+		<input type="checkbox" name="playgame" id="gaming"><label for="gaming">Играю в игры</label><br>
+		<h4>Расказать о форме в книге посвященной html</h4>
+		<select name="book" id="formhtml">
+			<option value="site"selected>Site frequency</option>
+			<option value="htmlbook">htmlbook.ru</option>
+			<option value=""></option>
+		</select>
+		<h4>Сколько книг вы прочитали за всю свою жизнь?</h4>
+		<input type="radio" name="book" id="ten"value="ten"><label for="ten">0-10</label><br>
+		<input type="radio" name="book" id="twenty"value="twenty"><label for="twenty">11-20</label><br>
+		<input type="radio" name="book" id="twentyone"value="twentyone"><label for="twentyone">21-50</label><br>
+		<input type="radio" name="book" id="fifty"value="fifty"><label for="fifty">50+</label><br>
+		<label for="comment"><h4>Ваши коментарии</h4></label>
+		<textarea name="comments" id="comment" cols="50" rows="10"></textarea><br>
+		<select name="pozition" id="listPosition">
+			<option value="first">Первая позиция</option>
+			<option value="second">Вторая позиция</option>
+			<option value="third">Третья позиция</option>
+		</select><br>
+		</fieldset>
+		<fieldset>
+			<legend><b>И в заключении</b></legend>
+			<input type="text" placeholder="Это поле было введено до вас"><br>
+			<label for="mail"><b>Email</b></label><br>
+			<input type="email" name="mail" id="mail">
+			<h4>Хотите подписаться на самую модную рассылку спама?</h4>
+			<p><em>Выерите категории</em></p>
+			<input type="checkbox" name="equipment" id="equipment"><label for="equipment">Оборудование</label><br>
+			<input type="checkbox" name="cooking" id="cooking"><label for="cooking">Как приготовить обеды</label><br>
+			<input type="checkbox" name="money" id="money"><label for="money">Заработай миллион за два дня</label><br>
+			<h4>На сколько сложная задача:</h4>
+			<input type="radio" name="complication" id="easy"><label for="easy">Совсем нет</label><br>
+			<input type="radio" name="complication" id="medium"><label for="medium">Так себе</label><br>
+			<input type="radio" name="complication" id="hard"><label for="hard">Еле справился</label><br>
+		</fieldset>
+		<p><input type="submit" value="Отправить"></p>
+	</form>
+</body>
+</html>
